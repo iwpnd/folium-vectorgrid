@@ -68,6 +68,7 @@ import folium
 
 url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
 
+m = folium.Map()
 options = {
     "subdomain": "my_subdomain",
     "token": "my_token",
