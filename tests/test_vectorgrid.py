@@ -1,24 +1,26 @@
 """
-Test VectorGrid
+Test VectorGridProtobuf
 ---------------
 """
 
-import folium
-from folium_vector import VectorGrid
-from folium.utilities import normalize
 import json
+
+import folium
+from folium.utilities import normalize
+
+from folium_vector import VectorGridProtobuf
 
 
 def test_vectorgrid():
     m = folium.Map(location=(30, 20), zoom_start=4)
     url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
-    vc = VectorGrid(url, "test").add_to(m)
+    vc = VectorGridProtobuf(url, "test").add_to(m)
     out = normalize(m._parent.render())
 
-    expected = normalize(VectorGrid._template.render(this=vc))
+    expected = normalize(VectorGridProtobuf._template.render(this=vc))
     assert expected in out
 
-    script = f'<script src="{VectorGrid.default_js[0][1]}"></script>'
+    script = f'<script src="{VectorGridProtobuf.default_js[0][1]}"></script>'
     assert script in out
     assert url in out
     assert "L.vectorGrid.protobuf" in out
@@ -42,13 +44,13 @@ def test_vectorgrid_str_options():
             }
         }"""
 
-    vc = VectorGrid(url, "test", options)
+    vc = VectorGridProtobuf(url, "test", options)
     m.add_child(vc)
 
     dict_options = json.loads(options)
 
     out = normalize(m._parent.render())
-    script = f'<script src="{VectorGrid.default_js[0][1]}"></script>'
+    script = f'<script src="{VectorGridProtobuf.default_js[0][1]}"></script>'
 
     assert script in out
     assert url in out
@@ -85,11 +87,11 @@ def test_vectorgrid_dict_options():
         },
     }
 
-    vc = VectorGrid(url, "test", options)
+    vc = VectorGridProtobuf(url, "test", options)
     m.add_child(vc)
 
     out = normalize(m._parent.render())
-    script = f'<script src="{VectorGrid.default_js[0][1]}"></script>'
+    script = f'<script src="{VectorGridProtobuf.default_js[0][1]}"></script>'
 
     assert script in out
     assert url in out

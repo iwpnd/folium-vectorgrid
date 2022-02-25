@@ -3,7 +3,7 @@
   <h3 align="center">Folium-Vector</h3>
 
   <p align="center">
-    VectorGrid plugin for Folium
+    VectorGrid.protobuf plugin for Folium
     <br />
     <a href="https://github.com/iwpnd/folium-vector/issues">Report Bug</a>
     ·
@@ -63,7 +63,7 @@ This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.Vector
 ## Usage
 
 ```python
-from folium_vector import VectorGrid
+from folium_vector import VectorGridProtobuf
 import folium
 
 url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
@@ -84,7 +84,7 @@ options = {
     }
 }
 
-vc = VectorGrid(url, "folium_layer_name", options)
+vc = VectorGridProtobuf(url, "folium_layer_name", options)
 m.add_child(vc)
 m
 ```
@@ -93,7 +93,7 @@ Or with conditional styling
 
 ```python
 import folium
-from folium_vector import VectorGrid
+from folium_vector import VectorGridProtobuf
 
 m = folium.Map()
 url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
@@ -128,7 +128,7 @@ options = '''{
   }
 }'''
 
-VectorGrid(url,"layer_name",options).add_to(m)
+VectorGridProtobuf(url,"layer_name",options).add_to(m)
 m
 ```
 

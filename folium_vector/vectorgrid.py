@@ -1,9 +1,9 @@
-from folium.map import Layer
 from folium.elements import JSCSSMixin
+from folium.map import Layer
 from jinja2 import Template
 
 
-class VectorGrid(JSCSSMixin, Layer):
+class VectorGridProtobuf(JSCSSMixin, Layer):
     """
     Add vector tile layers based on https://github.com/Leaflet/Leaflet.VectorGrid.
 
@@ -53,7 +53,7 @@ class VectorGrid(JSCSSMixin, Layer):
     ...         }
     ...     }
 
-    >>> VectorGrid(url,"layer_name",options).add_to(m)
+    >>> VectorGridProtobuf(url,"layer_name",options).add_to(m)
 
     Options as string allows to pass functions
 
@@ -88,7 +88,7 @@ class VectorGrid(JSCSSMixin, Layer):
     ... }
     }'''
 
-    >>> VectorGrid(url,"layer_name",options).add_to(m)
+    >>> VectorGridProtobuf(url,"layer_name",options).add_to(m)
 
 
     For more info, see: https://leaflet.github.io/Leaflet.VectorGrid/vectorgrid-api-docs.html#styling-vectorgrids.
@@ -117,12 +117,12 @@ class VectorGrid(JSCSSMixin, Layer):
     ]
 
     def __init__(self, url, layer_name, options=None):
-        self.layer_name = layer_name if layer_name else "VectorGridLayer"
+        self.layer_name = layer_name if layer_name else "VectorGridProtobufLayer"
 
-        super(VectorGrid, self).__init__(name=self.layer_name)
+        super(VectorGridProtobuf, self).__init__(name=self.layer_name)
 
         self.url = url
-        self._name = "VectorGrid"
+        self._name = "VectorGridProtobuf"
 
         if options is not None:
             self.options = options

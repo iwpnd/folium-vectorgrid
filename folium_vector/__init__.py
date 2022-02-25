@@ -1,1 +1,1 @@
-from .vector_grid import VectorGrid
+from .vectorgrid import VectorGridProtobuf
