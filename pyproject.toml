@@ -11,7 +11,7 @@ folium = "^0.12.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.1"
-pre-commit = "^2.15.0"
+pre-commit = "^2.18.1"
 black = "^22.1"
 gitlint = "^0.17.0"
 poethepoet = "^0.13.1"
