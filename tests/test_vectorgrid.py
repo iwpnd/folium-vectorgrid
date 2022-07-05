@@ -8,7 +8,7 @@ import json
 import folium
 from folium.utilities import normalize
 
-from folium_vector import VectorGridProtobuf
+from folium_vectorgrid import VectorGridProtobuf
 
 
 def test_vectorgrid():

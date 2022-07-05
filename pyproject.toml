@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "folium-vector"
+name = "folium-vectorgrid"
 version = "0.1.0"
 description = "VectorGrid plugin for folium"
 authors = ["Benjamin Ramser <ahoi@ipwnd.pw>"]
@@ -25,5 +25,5 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poe.tasks]
 test       = "poetry run pytest -vv -s tests/"
-test-cov   = "poetry run pytest -vv -s --cov=folium_vector tests/"
+test-cov   = "poetry run pytest -vv -s --cov=folium_vectorgrid tests/"
 lint       = "flake8 ."
