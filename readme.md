@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <h3 align="center">Folium-Vector</h3>
+  <h3 align="center">Folium-VectorGrid</h3>
 
   <p align="center">
     VectorGrid.protobuf plugin for Folium
@@ -37,6 +37,8 @@
 
 ## About The Project
 
+Now part of folium plugins see: [#1576](https://github.com/python-visualization/folium/pull/1576)
+
 This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.VectorGrid](https://github.com/Leaflet/Leaflet.VectorGrid/) into a folium plugin, users can now add vector tile layers (e.g. Mapbox, OpenMapTiles) to their folium maps.
 
 ### Built With
@@ -52,7 +54,7 @@ This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.Vector
 
 1. Clone and install
     ```sh
-    git clone https://github.com/iwpnd/folium-vector.git
+    git clone https://github.com/iwpnd/folium-vectorgrid.git
     poetry install
     ```
 2. Test it!
@@ -63,7 +65,7 @@ This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.Vector
 ## Usage
 
 ```python
-from folium_vector import VectorGridProtobuf
+from folium_vectorgrid import VectorGridProtobuf
 import folium
 
 url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
@@ -93,7 +95,7 @@ Or with conditional styling
 
 ```python
 import folium
-from folium_vector import VectorGridProtobuf
+from folium_vectorgrid import VectorGridProtobuf
 
 m = folium.Map()
 url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
@@ -139,4 +141,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Benjamin Ramser - [@imwithpanda](https://twitter.com/imwithpanda) - ahoi@iwpnd.pw  
-Project Link: [https://github.com/iwpnd/folium-vector](https://github.com/iwpnd/folium-vector)
+Project Link: [https://github.com/iwpnd/folium-vector](https://github.com/iwpnd/folium-vectorgrid)
