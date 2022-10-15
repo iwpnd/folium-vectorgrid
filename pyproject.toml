@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-folium = "^0.12.1"
+folium = "^0.13.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.3"
