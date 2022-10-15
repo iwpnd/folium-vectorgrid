@@ -37,7 +37,7 @@
 
 ## About The Project
 
-Now part of folium plugins see: [#1576](https://github.com/python-visualization/folium/pull/1576)
+Now part of folium plugins as of [v0.13.0](https://github.com/python-visualization/folium/releases/tag/v0.13.0).
 
 This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.VectorGrid](https://github.com/Leaflet/Leaflet.VectorGrid/) into a folium plugin, users can now add vector tile layers (e.g. Mapbox, OpenMapTiles) to their folium maps.
 
