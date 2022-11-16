@@ -50,7 +50,19 @@ This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.Vector
 
 ## Getting Started
 
+### Prerequisite
+
+Install [Poetry](https://python-poetry.org/docs/#installation).
+
 ### Installation
+
+#### as dependency
+
+```
+poetry add git+https://github.com/iwpnd/folium-vectorgrid.git
+```
+
+#### local development
 
 1. Clone and install
     ```sh
@@ -59,7 +71,7 @@ This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.Vector
     ```
 2. Test it!
     ```sh
-    poe test
+    poe test  # or poetry run pytest .
     ```
 
 ## Usage
