@@ -162,14 +162,14 @@ pyflakes = ">=3.0.0,<3.1.0"
 
 [[package]]
 name = "folium"
-version = "0.13.0"
+version = "0.14.0"
 description = "Make beautiful maps with Leaflet.js & Python"
 category = "main"
 optional = false
 python-versions = ">=3.5"
 
 [package.dependencies]
-branca = ">=0.3.0"
+branca = ">=0.6.0"
 jinja2 = ">=2.9"
 numpy = "*"
 requests = "*"
@@ -578,7 +578,7 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "448462a82f1f463f2d98506c1fff326f883d05550fcebb6a29d14bb1e4c37207"
+content-hash = "ab5bc9dad829eb57aed0e169cb40b31bbdd857aec5dc44290248b5019816e8cb"
 
 [metadata.files]
 arrow = [
@@ -705,8 +705,8 @@ flake8 = [
     {file = "flake8-6.0.0.tar.gz", hash = "sha256:c61007e76655af75e6785a931f452915b371dc48f56efd765247c8fe68f2b181"},
 ]
 folium = [
-    {file = "folium-0.13.0-py2.py3-none-any.whl", hash = "sha256:6219350c4303b556e5c80f8379714374ebe8b14312a97add4c89bae4daaa3d9f"},
-    {file = "folium-0.13.0.tar.gz", hash = "sha256:9eee35961cd9a3234948efe47bcd0ef9729a278768ae90685c24922beafb53dd"},
+    {file = "folium-0.14.0-py2.py3-none-any.whl", hash = "sha256:c894e2c029a8ca40e043a311978a895cefe32d746a94263f807dd7b6b2e9c679"},
+    {file = "folium-0.14.0.tar.gz", hash = "sha256:8ec44697d18f5932e0fdaee8b19da98625de4d0e72cb30ef56f9479f18e11b9f"},
 ]
 gitlint = [
     {file = "gitlint-0.18.0-py2.py3-none-any.whl", hash = "sha256:77ad954738b400019c1bc51241abdae5fea28c81d1586ef9fe133b96b503531e"},

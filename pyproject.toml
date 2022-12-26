@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-folium = "^0.13.0"
+folium = "^0.14.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
