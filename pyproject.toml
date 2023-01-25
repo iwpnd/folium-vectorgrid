@@ -10,20 +10,63 @@ python = "^3.9"
 folium = "^0.14.0"
 
 [tool.poetry.group.dev.dependencies]
-flake8 = "^6.0.0"
 gitlint = "^0.18.0"
-pytest = "^7.2.0"
-pre-commit = "^2.20.0"
-black = "^22.10"
+pytest = "^7.2.1"
+pre-commit = "^3.0.0"
+black = "^22.12.0"
 poethepoet = "^0.16.4"
-isort = "^5.9.3"
+isort = "^5.11.4"
 pytest-cov = "^4.0.0"
+ruff = "^0.0.231"
+
+[tool.ruff]
+line-length = 88
+
+# Enable Pyflakes `E` and `F` codes by default.
+select = ["E", "F"]
+ignore = ["E501"]
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.10.
+target-version = "py310"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.2.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poe.tasks]
 test       = "poetry run pytest -vv -s tests/"
 test-cov   = "poetry run pytest -vv -s --cov=folium_vectorgrid tests/"
-lint       = "flake8 ."
+lint       = "ruff ."
