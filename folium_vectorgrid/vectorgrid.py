@@ -116,10 +116,12 @@ class VectorGridProtobuf(JSCSSMixin, Layer):
         )
     ]
 
-    def __init__(self, url, layer_name, options=None):
+    def __init__(self, url, layer_name, options=None, show=True, overlay=True):
         self.layer_name = layer_name if layer_name else "VectorGridProtobufLayer"
 
-        super(VectorGridProtobuf, self).__init__(name=self.layer_name)
+        super(VectorGridProtobuf, self).__init__(
+            name=self.layer_name, show=show, overlay=overlay
+        )
 
         self.url = url
         self._name = "VectorGridProtobuf"
