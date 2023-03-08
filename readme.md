@@ -62,6 +62,10 @@ Install [Poetry](https://python-poetry.org/docs/#installation).
 poetry add git+https://github.com/iwpnd/folium-vectorgrid.git
 ```
 
+```
+pip install folium-vectorgrid
+```
+
 #### local development
 
 1. Clone and install
