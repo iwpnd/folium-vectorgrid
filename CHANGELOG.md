@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2023-03-13)
+### Documentation
+* Update ([`86dba3a`](https://github.com/iwpnd/folium-vector/commit/86dba3ad748f7f4f849394b5e99f084702bec831))
+
 ## v0.1.0 (2023-03-08)
 ### Feature
 * Add show and overlay options and pass to super on init ([`7b41ada`](https://github.com/iwpnd/folium-vector/commit/7b41ada218d9d08d2e598aee1fe03e5f4f8ad997))
