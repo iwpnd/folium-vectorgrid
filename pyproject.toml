@@ -4,7 +4,7 @@ version = "0.1.1"
 description = "VectorGrid plugin for folium"
 authors = ["Benjamin Ramser <ahoi@ipwnd.pw>"]
 license = "MIT"
-readme = "README.md"
+readme = "readme.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
