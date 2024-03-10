@@ -352,13 +352,13 @@ typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
 name = "folium"
-version = "0.15.0"
+version = "0.16.0"
 description = "Make beautiful maps with Leaflet.js & Python"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "folium-0.15.0-py2.py3-none-any.whl", hash = "sha256:ee59df0a2ea6b958ae0ea0638915457f09711c45bac0e061810b52e7a255c69d"},
-    {file = "folium-0.15.0.tar.gz", hash = "sha256:1be7dbd4a59c7d096194b5e9868402d637f99daaaa0673381deb5d407dc552ce"},
+    {file = "folium-0.16.0-py2.py3-none-any.whl", hash = "sha256:ba72505db18bef995c880da19457d2b10c931db8059af5f6ccec9310d262b584"},
+    {file = "folium-0.16.0.tar.gz", hash = "sha256:2585ee9253dc758d3a365534caa6fb5fa0c244646db4dc5819afc67bbd4daabb"},
 ]
 
 [package.dependencies]
@@ -366,6 +366,7 @@ branca = ">=0.6.0"
 jinja2 = ">=2.9"
 numpy = "*"
 requests = "*"
+xyzservices = "*"
 
 [package.extras]
 testing = ["pytest"]
@@ -1355,6 +1356,17 @@ docs = ["furo (>=2023.7.26)", "proselint (>=0.13)", "sphinx (>=7.1.2)", "sphinx-
 test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7)", "packaging (>=23.1)", "pytest (>=7.4)", "pytest-env (>=0.8.2)", "pytest-freezer (>=0.4.8)", "pytest-mock (>=3.11.1)", "pytest-randomly (>=3.12)", "pytest-timeout (>=2.1)", "setuptools (>=68)", "time-machine (>=2.10)"]
 
 [[package]]
+name = "xyzservices"
+version = "2023.10.1"
+description = "Source of XYZ tiles providers"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "xyzservices-2023.10.1-py3-none-any.whl", hash = "sha256:6a4c38d3a9f89d3e77153eff9414b36a8ee0850c9e8b85796fd1b2a85b8dfd68"},
+    {file = "xyzservices-2023.10.1.tar.gz", hash = "sha256:091229269043bc8258042edbedad4fcb44684b0473ede027b5672ad40dc9fa02"},
+]
+
+[[package]]
 name = "zipp"
 version = "3.17.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
@@ -1372,4 +1384,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "b1d94c6a4150474f14aa9772bfb0ab9f78116425a60e2c3aeb7435f66d5b28e5"
+content-hash = "915ffcfa25840b7931873d6a109623c6d74e6063799412f36aad744d0c04cc2c"
