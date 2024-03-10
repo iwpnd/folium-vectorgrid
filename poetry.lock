@@ -352,13 +352,13 @@ typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
 name = "folium"
-version = "0.15.1"
+version = "0.16.0"
 description = "Make beautiful maps with Leaflet.js & Python"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "folium-0.15.1-py2.py3-none-any.whl", hash = "sha256:480f217b80d27530eef22e0535030f1696d61a2d55e6cc17acc36750cca89463"},
-    {file = "folium-0.15.1.tar.gz", hash = "sha256:cb792d11e8049a455d3dc6416cdd8e7a1623d6b949f6e42c45a5d8fa4d1e24f4"},
+    {file = "folium-0.16.0-py2.py3-none-any.whl", hash = "sha256:ba72505db18bef995c880da19457d2b10c931db8059af5f6ccec9310d262b584"},
+    {file = "folium-0.16.0.tar.gz", hash = "sha256:2585ee9253dc758d3a365534caa6fb5fa0c244646db4dc5819afc67bbd4daabb"},
 ]
 
 [package.dependencies]
@@ -1384,4 +1384,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "224a90824ed2b2f718d1b6c6547b224fc81833a0affb3dcf25e3dd30942498c9"
+content-hash = "915ffcfa25840b7931873d6a109623c6d74e6063799412f36aad744d0c04cc2c"
