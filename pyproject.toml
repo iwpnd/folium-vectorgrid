@@ -90,7 +90,7 @@ allowed_tags = [
     "test",
 ]
 minor_tags = ["feat"]
-patch_tags = ["fix", "perf"]
+patch_tags = ["fix", "perf", "chore(deps)"]
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [
