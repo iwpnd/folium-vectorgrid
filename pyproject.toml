@@ -103,4 +103,4 @@ exclude_commit_patterns = [
 [tool.poe.tasks]
 test       = "poetry run pytest -vv -s tests/"
 test-cov   = "poetry run pytest -vv -s --cov=folium_vectorgrid tests/"
-lint       = "ruff ."
+lint       = "ruff check ."
