@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "folium-vectorgrid"
-version = "0.1.2"
+version = "0.1.3"
 description = "VectorGrid plugin for folium"
 authors = ["Benjamin Ramser <iwpnd@posteo.de>"]
 license = "MIT"

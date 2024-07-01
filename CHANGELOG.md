@@ -1,6 +1,16 @@
 # CHANGELOG
 
+## v0.1.3 (2024-07-01)
 
+### Chore
+
+* chore: fix ruff lint command ([`d67c465`](https://github.com/iwpnd/folium-vectorgrid/commit/d67c4650c3a03c3078499a0ed14bf22ed434ee67))
+
+* chore: remove chore(deps) from patch_tags ([`6fc6569`](https://github.com/iwpnd/folium-vectorgrid/commit/6fc6569199e3d94c759568d96a5057b195f35596))
+
+### Fix
+
+* fix: update folium ([`ab32ab8`](https://github.com/iwpnd/folium-vectorgrid/commit/ab32ab8d3dc8d460e4c8a47a9fba3ea1f02ccacc))
 
 ## v0.1.2 (2024-03-10)
 
@@ -38,7 +48,6 @@
 
 * docs: update email ([`830b89d`](https://github.com/iwpnd/folium-vectorgrid/commit/830b89dda04977d45563fec2fce539ad301e10e8))
 
-
 ## v0.1.1 (2023-03-13)
 
 ### Chore
@@ -48,7 +57,6 @@
 ### Documentation
 
 * docs: update ([`86dba3a`](https://github.com/iwpnd/folium-vectorgrid/commit/86dba3ad748f7f4f849394b5e99f084702bec831))
-
 
 ## v0.1.0 (2023-03-08)
 
