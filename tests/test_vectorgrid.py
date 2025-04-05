@@ -4,6 +4,7 @@ Test VectorGridProtobuf
 """
 
 import json
+from typing import Any
 
 import folium
 from folium.utilities import normalize
@@ -11,7 +12,7 @@ from folium.utilities import normalize
 from folium_vectorgrid import VectorGridProtobuf
 
 
-def test_vectorgrid():
+def test_vectorgrid() -> None:
     m = folium.Map(location=(30, 20), zoom_start=4)
     url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
     vc = VectorGridProtobuf(url, "test").add_to(m)
@@ -26,7 +27,7 @@ def test_vectorgrid():
     assert "L.vectorGrid.protobuf" in out
 
 
-def test_vectorgrid_str_options():
+def test_vectorgrid_str_options() -> None:
     m = folium.Map(location=(30, 20), zoom_start=4)
     url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
     options = """{
@@ -69,10 +70,10 @@ def test_vectorgrid_str_options():
         assert f'"{k}": {v}' in out
 
 
-def test_vectorgrid_dict_options():
+def test_vectorgrid_dict_options() -> None:
     m = folium.Map(location=(30, 20), zoom_start=4)
     url = "https://free-{s}.tilehosting.com/data/v3/{z}/{x}/{y}.pbf?token={token}"
-    options = {
+    options: dict[str, Any] = {
         "subdomain": "test",
         "token": "test_token",
         "vectorTileLayerStyles": {

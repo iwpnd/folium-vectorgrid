@@ -1,6 +1,8 @@
+from typing import Any
+
 from folium.elements import JSCSSMixin
 from folium.map import Layer
-from jinja2 import Template
+from jinja2 import Template  # noqa:DEP003
 
 
 class VectorGridProtobuf(JSCSSMixin, Layer):
@@ -94,7 +96,7 @@ class VectorGridProtobuf(JSCSSMixin, Layer):
     For more info, see: https://leaflet.github.io/Leaflet.VectorGrid/vectorgrid-api-docs.html#styling-vectorgrids.
     """
 
-    _template = Template(
+    _template = Template(  # noqa:RUF004
         """
             {% macro script(this, kwargs) -%}
             var {{ this.get_name() }} = L.vectorGrid.protobuf(
@@ -116,15 +118,20 @@ class VectorGridProtobuf(JSCSSMixin, Layer):
         )
     ]
 
-    def __init__(self, url, layer_name, options=None, show=True, overlay=True):
-        self.layer_name = layer_name if layer_name else "VectorGridProtobufLayer"
+    def __init__(
+        self,
+        url: str,
+        layer_name: str,
+        options: dict[str, Any] | None = None,
+        show: bool = True,
+        overlay: bool = True,
+    ) -> None:
+        self.layer_name: str = layer_name if layer_name else "VectorGridProtobufLayer"
 
-        super(VectorGridProtobuf, self).__init__(
-            name=self.layer_name, show=show, overlay=overlay
-        )
+        super().__init__(name=self.layer_name, show=show, overlay=overlay)
 
-        self.url = url
-        self._name = "VectorGridProtobuf"
+        self.url: str = url
+        self._name: str = "VectorGridProtobuf"
 
         if options is not None:
-            self.options = options
+            self.options: dict[str, Any] = options

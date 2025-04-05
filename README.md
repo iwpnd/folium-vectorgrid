@@ -43,8 +43,8 @@ This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.Vector
 
 ### Built With
 
--   [folium](https://github.com/python-visualization/folium)
--   [Leaflet.VectorGrid](https://github.com/Leaflet/Leaflet.VectorGrid)
+- [folium](https://github.com/python-visualization/folium)
+- [Leaflet.VectorGrid](https://github.com/Leaflet/Leaflet.VectorGrid)
 
 <!-- GETTING STARTED -->
 
@@ -52,14 +52,14 @@ This library fills a hole in foliums plugin eco-system. Wrapping [Leaflet.Vector
 
 ### Prerequisite
 
-Install [Poetry](https://python-poetry.org/docs/#installation).
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/).
 
 ### Installation
 
 #### as dependency
 
 ```
-poetry add git+https://github.com/iwpnd/folium-vectorgrid.git
+uv add git+https://github.com/iwpnd/folium-vectorgrid.git
 ```
 
 ```
@@ -69,14 +69,14 @@ pip install folium-vectorgrid
 #### local development
 
 1. Clone and install
-    ```sh
-    git clone https://github.com/iwpnd/folium-vectorgrid.git
-    poetry install
-    ```
+   ```sh
+   git clone https://github.com/iwpnd/folium-vectorgrid.git
+   uv sync
+   ```
 2. Test it!
-    ```sh
-    poe test  # or poetry run pytest .
-    ```
+   ```sh
+   make test
+   ```
 
 ## Usage
 
