@@ -58,7 +58,7 @@ jobs:
     permissions:
       id-token: write
       contents: write
-    needs: [quality, test-and-type-check]
+    needs: [quality, tests-and-type-check]
     steps:
     - uses: actions/checkout@v4
       with:
