@@ -1,8 +1,6 @@
-from typing import Any
-
 from folium.elements import JSCSSMixin
 from folium.map import Layer
-from jinja2 import Template  # noqa:DEP003
+from jinja2 import Template
 
 
 class VectorGridProtobuf(JSCSSMixin, Layer):
@@ -96,7 +94,7 @@ class VectorGridProtobuf(JSCSSMixin, Layer):
     For more info, see: https://leaflet.github.io/Leaflet.VectorGrid/vectorgrid-api-docs.html#styling-vectorgrids.
     """
 
-    _template = Template(  # noqa:RUF004
+    _template = Template(
         """
             {% macro script(this, kwargs) -%}
             var {{ this.get_name() }} = L.vectorGrid.protobuf(
@@ -109,20 +107,20 @@ class VectorGridProtobuf(JSCSSMixin, Layer):
             {% endif %}
             {%- endmacro %}
             """
-    )  # noqa
+    )
 
-    default_js = [
+    default_js = [  # noqa:RUF012
         (
             "vectorGrid",
             "https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js",
         )
     ]
 
-    def __init__(
+    def __init__(  # type: ignore[no-untyped-def]
         self,
         url: str,
         layer_name: str,
-        options: dict[str, Any] | None = None,
+        options=None,
         show: bool = True,
         overlay: bool = True,
     ) -> None:
@@ -134,4 +132,4 @@ class VectorGridProtobuf(JSCSSMixin, Layer):
         self._name: str = "VectorGridProtobuf"
 
         if options is not None:
-            self.options: dict[str, Any] = options
+            self.options = options
