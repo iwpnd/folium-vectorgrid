@@ -125,7 +125,7 @@ version_variables = [
 commit_subject = "ci: release v{version}"
 branch = "main"
 upload_to_release = true
-build_command = "make build"
+build_command = "pip install uv && uv build"
 
 [tool.semantic_release.commit_parser_options]
 allowed_tags = [
