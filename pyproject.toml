@@ -1,6 +1,6 @@
 [project]
 name = "folium-vectorgrid"
-version = "0.2.0"
+version = "1.0.0"
 description = "vectorgrid plugin for folium"
 authors = [{ name = "Benjamin Ramser", email = "iwpnd@posteo.de" }]
 readme = "README.md"
