@@ -1,6 +1,6 @@
 [project]
 name = "folium-vectorgrid"
-version = "1.0.0"
+version = "0.2.0"
 description = "vectorgrid plugin for folium"
 authors = [{ name = "Benjamin Ramser", email = "iwpnd@posteo.de" }]
 readme = "README.md"
@@ -122,10 +122,11 @@ version_variables = [
     "src/folium_vectorgrid/__init__.py:__version__",
     "pyproject.toml:version",
 ]
-commit_subject = "ci: release v{version}"
+commit_message = "ci: release v{version}"
 branch = "main"
 upload_to_release = true
 build_command = "pip install uv && uv build"
+allow_zero_version = true
 
 [tool.semantic_release.commit_parser_options]
 allowed_tags = [
