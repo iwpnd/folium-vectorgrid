@@ -28,7 +28,7 @@ Documentation = "https://iwpnd.github.io/folium-vectorgrid/"
 [dependency-groups]
 dev = [
     "pytest>=9.0.3",
-    "pre-commit>=2.20.0",
+    "pre-commit>=4.6.0",
     "tox-uv>=1.35.1",
     "deptry>=0.22.0",
     "mypy>=1.20.2",
