@@ -33,7 +33,7 @@ dev = [
     "deptry>=0.22.0",
     "mypy>=2.1.0",
     "pytest-cov>=4.0.0",
-    "ruff>=0.15.17",
+    "ruff>=0.15.20",
     "gitlint>=0.19.1",
     "python-semantic-release>=9.21.0",
 ]
